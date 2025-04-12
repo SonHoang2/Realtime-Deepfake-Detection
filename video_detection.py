@@ -10,7 +10,7 @@ def main():
             break
         
         faces = detect_bounding_box(video_frame)
-        video_frame = predict(video_frame)
+        _, _, video_frame = predict(video_frame)
 
         cv2.imshow("My Face Detection Project", video_frame)
 
